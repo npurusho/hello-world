@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello World</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first GitHub Pages site.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">BrightLanding</div>
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Bright Landing</h1>
+    <p>A simple, responsive landing page built with just HTML, CSS, and JS.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>This is a fully open-source landing page project. You can fork it, edit it, and use it freely.</p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <div class="card">Image 1</div>
+      <div class="card">Image 2</div>
+      <div class="card">Image 3</div>
+      <div class="card">Image 4</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bright Landing. MIT License.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
